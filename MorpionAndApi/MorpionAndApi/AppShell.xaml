@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MorpionAndApi.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MorpionAndApi"
+    Shell.FlyoutBehavior="Disabled">
+    
+    <TabBar>
+        <ShellContent
+            Title="Morpion"
+            Icon="board.svg"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" />
+
+        <ShellContent
+            Title="API"
+            Icon="api.svg"
+            ContentTemplate="{DataTemplate local:ApiPage}"
+            Route="ApiPage" />
+
+        <ShellContent
+            Title="CounterGame"
+            Icon="counter.svg"
+            ContentTemplate="{DataTemplate local:CounterPage}"
+            Route="CounterPage" />
+    </TabBar>
+
+</Shell>

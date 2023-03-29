@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MorpionAndApi.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="logo.png"
+                WidthRequest="200"
+                />
+            <Grid>
+                <Grid ColumnSpacing="30" RowSpacing="30">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="Button1" Grid.Row="0" Grid.Column="0" Clicked="OnClickButton1_Clicked"/>
+                    <Button x:Name="Button2" Grid.Row="0" Grid.Column="1" Clicked="OnClickButton2_Clicked"/>
+                    <Button x:Name="Button3" Grid.Row="0" Grid.Column="2" Clicked="OnClickButton3_Clicked"/>
+
+                    <Button x:Name="Button4" Grid.Row="1" Grid.Column="0" Clicked="OnClickButton4_Clicked"/>
+                    <Button x:Name="Button5" Grid.Row="1" Grid.Column="1" Clicked="OnClickButton5_Clicked"/>
+                    <Button x:Name="Button6" Grid.Row="1" Grid.Column="2" Clicked="OnClickButton6_Clicked"/>
+
+                    <Button x:Name="Button7" Grid.Row="2" Grid.Column="0" Clicked="OnClickButton7_Clicked"/>
+                    <Button x:Name="Button8" Grid.Row="2" Grid.Column="1" Clicked="OnClickButton8_Clicked"/>
+                    <Button x:Name="Button9" Grid.Row="2" Grid.Column="2" Clicked="OnClickButton9_Clicked"/>
+                </Grid>
+            </Grid>
+
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="25">
+
+                <Label
+                    x:Name="Joueur1"
+                    Text="J1 - Score : 0"
+                    FontSize="18"
+                    />
+
+                <Label
+                    x:Name="Joueur2"
+                    Text="J2 - Score : 0"
+                    FontSize="18"
+                    />
+            </HorizontalStackLayout>
+
+            <Button
+                x:Name="Reset"
+                Text="Remettre à zéro"
+                FontSize="18" 
+                Clicked="Reset_Clicked"
+                BackgroundColor="Black"
+                />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

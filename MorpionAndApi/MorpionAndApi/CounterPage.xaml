@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MorpionAndApi.CounterPage"
+             Title="CounterPage">
+    <VerticalStackLayout>
+        <HorizontalStackLayout HorizontalOptions="Center" Spacing="20" Margin="50">
+            <Button 
+                x:Name="Joueur1"
+                Text="Joueur 1 : 0"
+                FontSize="18" 
+                Clicked="Joueur1_Clicked"
+                BackgroundColor="Black"/>
+
+            <Button 
+                x:Name="Joueur2"
+                Text="Joueur 2 : 0"
+                FontSize="18" 
+                Clicked="Joueur2_Clicked"
+                BackgroundColor="Black"/>
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>
